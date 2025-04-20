@@ -69,3 +69,75 @@
     }
   }
 }
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  & .projects-list {
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 3em;
+
+    & .card {
+      box-shadow:
+        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      display: flex;
+      gap: 1em;
+      border-radius: 0.5em;
+      flex-direction: column;
+    }
+
+    & .project-screenshot,
+    .project-details {
+      padding: 2em;
+    }
+
+    & .project-screenshot.chess {
+      background: var(--purple-color);
+    }
+    & .project-screenshot.mastermind {
+      background: var(--yellow-color);
+    }
+    & .project-screenshot.hangman {
+      background: var(--red-color);
+    }
+    & .project-screenshot.odinbook {
+      background: var(--rose-color);
+    }
+    & .project-screenshot.connect_four {
+      background: var(--blue-color);
+    }
+    & .project-screenshot.flight_booker {
+      background: var(--green-color);
+    }
+
+    & .project-title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .project-links {
+      display: flex;
+      gap: 0.8em;
+
+      & .link {
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      & .link:hover {
+        color: var(--blue-color);
+      }
+    }
+
+    & .project-description {
+      margin: 1.5em 0;
+    }
+  }
+}
