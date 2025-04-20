@@ -223,7 +223,7 @@ body {
   }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .user-profile {
     display: block;
 
@@ -236,6 +236,7 @@ body {
       & .name {
         top: 0;
         right: 0;
+        height: 2em;
         transform: translateX(80%);
         color: var(--black-color);
       }
